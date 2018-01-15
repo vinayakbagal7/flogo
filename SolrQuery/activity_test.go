@@ -1,11 +1,12 @@
 package SolrQuery
 
 import (
+	"fmt"
 	"io/ioutil"
 	"testing"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-contrib/action/flow/test"
+	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 )
 
 var activityMetadata *activity.Metadata
@@ -14,7 +15,7 @@ func getActivityMetadata() *activity.Metadata {
 
 	if activityMetadata == nil {
 		jsonMetadataBytes, err := ioutil.ReadFile("activity.json")
-		if err != nil{
+		if err != nil {
 			panic("No Json Metadata found for activity.json path")
 		}
 
@@ -48,8 +49,17 @@ func TestEval(t *testing.T) {
 	tc := test.NewTestActivityContext(getActivityMetadata())
 
 	//setup attrs
+	tc.SetInput("Host", "localhost")
+	tc.SetInput("Port", 8983)
+	tc.SetInput("Collection", "gettingstarted")
+	tc.SetInput("Query", "*:*")
 
 	act.Eval(tc)
+
+	//check result attr
+	result := tc.GetOutput("Output")
+	//assert.Equal(t, result, "The Flogo engine says Hello to Leon")
+	fmt.Printf("%s", result)
 
 	//check result attr
 }
