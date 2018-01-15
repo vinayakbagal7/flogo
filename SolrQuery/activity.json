@@ -1,0 +1,21 @@
+{
+  "name": "SolrQuery",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "ref": "github.com/vinayakbagal7/flogo/solrquery",
+  "title": "Solr Query",
+  "description": "Solr Query activity",
+  "homepage": "https://github.com/vinayakbagal7/flogo/tree/master/solrquery",
+  "inputs":[
+    {
+      "name": "input",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "output",
+      "type": "string"
+    }
+  ]
+}
