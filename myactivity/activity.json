@@ -1,0 +1,23 @@
+{
+  "name": "myactivity",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "My Activity description",
+  "author": "Vinayak Bagal <vbagal@tibco.com>",
+  "inputs":[
+    {
+      "name": "salutation",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}
