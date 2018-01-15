@@ -2,10 +2,10 @@
   "name": "SolrQuery",
   "version": "0.0.1",
   "type": "flogo:activity",
-  "ref": "github.com/vinayakbagal7/flogo/solrquery",
+  "ref": "github.com/vinayakbagal7/flogo/SolrQuery",
   "title": "Solr Query",
   "description": "Solr Query activity",
-  "homepage": "https://github.com/vinayakbagal7/flogo/tree/master/solrquery",
+  "homepage": "https://github.com/vinayakbagal7/flogo/tree/master/SolrQuery",
   "inputs":[
 
     {
