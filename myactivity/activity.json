@@ -2,8 +2,10 @@
   "name": "myactivity",
   "version": "0.0.1",
   "type": "flogo:activity",
+  "ref": "github.com/vinayakbagal7/flogo/myactivity",
   "description": "My Activity description",
   "author": "Vinayak Bagal <vbagal@tibco.com>",
+  "homepage": "https://github.com/vinayakbagal7/flogo/tree/master/myactivity",
   "inputs":[
     {
       "name": "salutation",
