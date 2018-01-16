@@ -1,0 +1,74 @@
+{
+  "name": "solrquery",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "ref": "github.com/vinayakbagal7/flogo/solrquery",
+  "title": "Solr Query",
+  "description": "Solr Query activity",
+  "homepage": "https://github.com/vinayakbagal7/flogo/tree/master/solrquery",
+  "inputs":[
+
+    {
+      "name": "Host",
+      "type": "string"
+    },
+    {
+      "name": "Port",
+      "type": "integer"
+    },
+    {
+      "name": "UserName",
+      "type": "string"
+    },
+    {
+      "name": "Password",
+      "type": "string"
+    },
+    {
+      "name": "Collection",
+      "type": "string"
+    },
+    {
+      "name": "Query",
+      "type": "string"
+    },
+
+    {
+      "name": "FilterQuery",
+      "type": "string"
+    },
+    {
+      "name": "Sort",
+      "type": "string"
+    },
+    {
+      "name": "Start",
+      "type": "integer",
+      "value":0
+    },
+    {
+      "name": "Row",
+      "type": "integer",
+      "value":10
+    },
+    {
+      "name": "FieldList",
+      "type": "string"
+    },
+    {
+      "name": "DefaultSearchList",
+      "type": "string"
+      
+    },
+    {
+      "name": "RawQueryParameter",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "Output",
+      "type": "string"
+    }
+  ]
+}
